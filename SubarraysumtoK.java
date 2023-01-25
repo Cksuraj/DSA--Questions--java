@@ -1,7 +1,7 @@
 import java.util.*;
 public class SubarraysumtoK {
     
-    public static void main(String[] args) {
+    public static int main(String[] args) {
         int nums[]={1,3,4,6,7};
         int k=4;
         HashMap<Integer ,Integer> map= new HashMap<>();
@@ -15,7 +15,7 @@ public class SubarraysumtoK {
                    } 
                    map.put(sum,map.getOrDefault(sum,0)+1);
          }
-        System.out.println(ans);
+        return ans;
  }
     }
 
