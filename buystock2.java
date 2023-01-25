@@ -36,7 +36,7 @@ public class buystock2 {
         return foundmax(0, 1, dp, stockprices);
     }
 
-    public static int maxporfit(int stockprices[]){
+    public static int maxsell(int stockprices[]){
         int buy = Integer.MAX_VALUE;
          int sellporfit=0;
          for(int i=0; i<stockprices.length;i++){
@@ -59,10 +59,10 @@ public class buystock2 {
         return maxprofit;
     }
     public static void main(String[] args) {
-        int stockprices[]={7,1,5,3,6,4};
-//        System.out.println(maxprofit(stockprices));
-     System.out.println(Profitmax(stockprices));  
-// System.out.print(maxporfit(stockprices));
+        int stockprices[]= {7,1,5,3,6,4};//{7,1,5,3,6,4};
+     //   System.out.println(maxprofit(stockprices));
+    // System.out.println(Profitmax(stockprices));
+    System.out.println(maxsell(stockprices));
     }
     
 }

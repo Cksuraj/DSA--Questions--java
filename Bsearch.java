@@ -10,8 +10,6 @@ public class Bsearch {
       while(start<end){
           int mid=(start+end)/2;
           if(nums[mid]==target) return true;
-          
-          
           if(nums[mid]<target){
               start =mid+1;
           }
